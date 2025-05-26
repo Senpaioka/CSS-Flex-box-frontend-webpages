@@ -1,0 +1,45 @@
+@use "./base" as *;
+
+
+.service {
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 3rem 0;
+        background-color: var(--color-grey-background);
+    }
+
+    &__item {
+        max-width: 30rem;
+        padding: 3rem 1rem;
+
+        @media screen and (max-width: 499px) {
+            min-width: 40rem;
+        }
+
+        &--icon {    
+        display: inline-block;
+        font-size: 4rem;
+        padding: 2rem 2.5rem;
+        background: linear-gradient(to right, var(--color-primary-dark) 50%,var(--color-primary-light) 50%);
+        color: #fff;
+        }
+
+        &--text {
+            font-family: $title-font;
+            font-size: 1.8rem;
+            color: var(--color-heading-black);
+            margin-top: 3rem;
+        }
+
+        &--details {
+            font-family: $body-font;
+            font-size: 1.6rem;
+            color: var(--color-small-text);
+            margin-top: 3rem;
+        }
+    }
+}

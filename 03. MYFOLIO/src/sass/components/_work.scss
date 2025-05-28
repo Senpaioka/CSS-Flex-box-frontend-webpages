@@ -1,0 +1,39 @@
+@use './base' as *;
+
+.work {
+
+    // background-color: var(--color-bg-light);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        font-family: $title-font;
+        font-size: 3.2rem;
+        color: var(--color-primary);
+        padding: 3rem 0;
+        text-transform: uppercase;
+    }
+
+    &__subtext {
+        font-family: $body-font;
+        font-size: 1.8rem;
+        color: var(--color-text-light);
+        padding: 3rem 0;
+    }
+
+    &__img {
+
+        text-align: center;
+        padding: 3rem 0;
+
+        &--item {
+        max-width: 298px;
+        }
+    }
+}

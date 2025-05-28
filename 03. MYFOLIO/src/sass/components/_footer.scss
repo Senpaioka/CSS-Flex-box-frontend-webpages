@@ -1,0 +1,17 @@
+@use './base' as *;
+
+.footer {
+
+    background-color: var(--color-bg-darkest);
+
+    &__container {
+        text-align: center;
+    }
+
+    &__text {
+        font-family: $title-font;
+        font-size: 1.6rem;
+        color: var(--color-text-light);
+        padding: 2rem 0;
+    }
+}

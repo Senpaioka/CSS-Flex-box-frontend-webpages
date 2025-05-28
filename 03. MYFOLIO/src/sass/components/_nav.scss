@@ -1,0 +1,44 @@
+@use './base' as *;
+
+.nav {
+
+    background-color: var(--color-primary);
+    padding: 2rem 1rem;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    &__list {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+
+    }
+
+    &__link {
+        font-family: $title-font;
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        transition: all .3s ease;
+
+        &:hover {
+            color: var(--color-btn-yellow);
+        }
+
+        &:active,
+        &:focus {
+            color: var(--color-btn-yellow);
+        }
+
+
+        
+    }
+
+}

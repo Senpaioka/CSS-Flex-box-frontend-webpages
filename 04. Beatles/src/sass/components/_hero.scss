@@ -1,0 +1,65 @@
+@use "./base" as *;
+
+.hero {
+
+    background-image: linear-gradient(to right,rgba(48, 48, 48, .6), rgba(48, 48, 48, .6)), url(/assets/img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 10rem 1rem;
+    }
+
+    &__upper {
+        font-family: $font-med;
+        font-size: 3rem;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0 1rem;
+    }
+
+    &__text {
+        font-family: $font-bold;
+        font-size: 5rem;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0 1rem;
+    }
+
+    &__details {
+        font-family: $font-small;
+        font-size: 1.4rem;
+        color: #fff;
+        width: 50%;
+        text-align: right;
+        padding: 3rem 1rem;
+    }
+
+    &__btn {
+
+        padding: 1rem 1rem;
+        
+        &--link {
+            font-family: $font-reg;
+            font-size: 1.4rem;
+            color: #fff;
+            text-transform: uppercase;
+            padding: .5rem 2rem;
+            border: 1px solid #fff;
+            transition: all .3s;
+
+            &:first-child {
+                margin-right: 2rem;
+            }
+
+            &:hover {
+                background: var(--color-primary);
+            }
+        }
+    }
+}

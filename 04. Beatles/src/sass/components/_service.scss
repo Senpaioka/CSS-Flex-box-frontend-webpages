@@ -1,0 +1,68 @@
+@use "./base" as *;
+
+
+.service {
+
+    &__heading {
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    &__text {
+        font-family: $font-med;
+        font-size: 2.4rem;
+        color: var(--color-text-bold);
+        text-transform: uppercase;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &__item {
+
+        text-align: center;
+        width: 350px;
+        margin-top: 5rem;
+
+
+        &--logo-container {
+            width: 80px;
+            height: 80px;
+            background: var(--color-bg-grey);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;     
+            margin: 0 auto;     
+            border: 2px solid #fff; 
+            position: absolute;
+            z-index: 1;
+            margin-top: -40px;
+            margin-left: 135px;
+
+        }
+
+        &--heading {
+            position: relative;
+            background: var(--color-bg-grey);
+            font-family: $font-med;
+            font-size: 1.8rem;
+            color: var(--color-text-bold);
+            text-transform: uppercase;
+            padding-top: 60px;
+        }
+
+        &--details {
+            background: var(--color-bg-grey);
+            font-family: $font-small;
+            font-size: 1.4rem;
+            color: var(--color-text-small);
+            padding: 1rem 1rem;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@use "./base" as *;
+
+
+.top-bar {
+
+    background-color: var(--color-primary);
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+
+    &__text {
+        font-family: $font-small;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        color: #fff;
+
+    }
+
+    &__links {
+
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        list-style: none;
+
+        &--icon {
+            font-size: 1.4rem;
+            color: #fff;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover,
+            &:active {
+                color: var(--color-text-small);
+            }
+        }
+    }
+}
+
+
+
+.nav {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        cursor: pointer;
+    }
+
+    &__links {
+
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        list-style: none;
+
+        &--item {
+            font-size: 1.4rem;
+            color: var(--color-text-bold);
+            text-transform: capitalize;
+            transition: all .3s;
+            cursor: pointer;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+}

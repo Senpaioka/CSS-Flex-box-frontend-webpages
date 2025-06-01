@@ -1,0 +1,133 @@
+@use "./base" as *;
+
+.contact {
+    background: var(--color-bg-dark);
+    margin-top: 5rem;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &__icon {
+        width: 260px;
+
+        img {
+            padding: 3rem 1rem;
+        }
+
+        &-text {
+            font-family: $font-small;
+            font-size: 1.4rem;
+            color: #fff;
+            padding: 1rem 1rem;
+        }
+    }
+
+
+    &__info {
+        width: 260px;
+
+        &--heading {
+            font-family: $font-med;
+            font-size: 1.8rem;
+            text-transform: capitalize;
+            color: #fff;
+            padding: 4rem 0;
+        }
+
+        &--item {
+            display: flex;
+            align-items: center;
+            padding: 1rem 0;
+
+
+            &-icon {
+                font-size: 2rem;
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                background: var(--color-primary);
+                text-align: center;
+                border-radius: 50%;
+                padding: .5rem 0;
+            }
+
+            &-text {
+                margin-left: 10px;
+            }
+
+            &-small {
+                font-family: $font-small;
+                font-size: 1.4rem;
+                color: #fff;
+            }
+        }
+    }
+
+    &__links {
+        
+        width: 260px;
+
+        &--heading {
+            font-family: $font-med;
+            font-size: 1.8rem;
+            text-transform: capitalize;
+            color: #fff;
+            padding: 4rem 0;
+        }
+
+        &--item {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &--link {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            a {
+                font-family: $font-small;
+                font-size: 1.4rem;
+                color: #fff;
+                padding: 1rem 1rem;
+                text-transform: capitalize;
+                transition: all .2s;
+            }
+
+            a:hover {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+
+    &__photo {
+        width: 320px;
+        padding-bottom: 5rem;
+
+        &--heading {
+            font-family: $font-med;
+            font-size: 1.8rem;
+            color: #fff;
+            text-transform: capitalize;
+            padding: 4rem 0;
+        }
+
+        &--img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            img {
+                padding: .5rem .5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@use "./base" as *;
+
+
+.footer {
+
+    background-color: #555555;
+    padding: 2rem 0;
+
+    &__container {
+        text-align: center;
+    }
+
+    &__text {
+        font-family: $font-small;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        color: #fff;
+
+        span {
+            text-transform: uppercase;
+            color: var(--color-primary);
+        }
+    }
+}

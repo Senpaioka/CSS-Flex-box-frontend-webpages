@@ -1,0 +1,52 @@
+@use "./base" as *;
+
+
+.about {
+
+    &__container {
+        padding: 2rem 1rem;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem;
+    }
+
+    &__text {
+        font-family: $font-med;
+        font-size: 2.4rem;
+        color: var(--color-text-bold);
+        text-transform: uppercase;
+    }
+
+    &__main {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &--details {
+            padding: 2rem 1rem;
+            width: 600px;
+
+            &:last-child p {
+                padding: 1rem 0;
+            }
+        }
+
+        &--img {
+            padding: 1rem 1rem;
+            width: 400px;
+        }
+
+        &--text {
+            font-family: $font-small;
+            font-size: 1.4rem;
+            color: var(--color-text-small);
+            padding: 1rem 3rem;
+        }
+    }
+}
